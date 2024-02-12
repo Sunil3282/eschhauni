@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: "Public Sans", sans-serif;
+}
+
+/* General css */
+:root{
+    --primaryColor:#075e89;
+    --LightColor: #fff;
+    --SecondaryColor: #f99a00;
+    --DarkColor: #585858;
+}
+.primary-color{
+    background-color: var(--primaryColor)
+}
+
+/* navbarcss */
+.nav-item{
+    font-size: medium;
+    color: var(--DarkColor);
+}
+
+
+/* hero section */
+
+@media (max-width : 576px ) {
+    .carousel-item img {
+    height: 200px ;
+    width: 200px ;
+    /* overflow: hidden; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: contain;
+    align-items: center;
+    justify-content: center;
+}
+}
+
+
+.hero .carousel-item img {
+    height: 35em ;
+    width: 100%;
+    /* overflow: hidden; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: contain;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.hero .carousel-item::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0.6;
+}
+
+.hero .carousel-item .carausal-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+.hero .carausal-topics{
+    align-items: center;
+    width: 70%;
+    text-align: center;
+    color: #fff;
+}
+
+/* Student info */
+.std-info .card-title{
+    font-size: 30px;
+    font-weight: 200px;
+}
+
+.about-section .message  .hidden{
+    display: none;
+}
+
+
+/* gallery */
+.gallery .gallery-items img{
+    max-width: 100%;
+    background-color: #ffffffff;
+    padding: 15px;
+    width: 100%;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+.gallery .gallery-items{
+    background-color: #dbddf1;
+    /* padding: 80px 0; */
+    align-items:center ;
+    justify-content: center;
+}
+
+.gallery-model .model-img{
+    width: 100;
+}
+
+.testimonials{
+    background: linear-gradient(to right,hsl(180,98%,37%),hsl(170,100%,48%));
+    padding: 100px 0;
+}
+.container_testimonial{
+    max-width: 1170px;
+    margin: auto;
+    padding:0 15px
+}
+
+.section-header{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-header .title{
+    font-size: 35px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: hsl(0,0%,100%);
+    line-height: 1.2;
+}
+.testimonials-item{
+    background-color: hsl(0,0%,100%);
+    padding: 30px;
+    border-radius: 30px;
+}
+.testimonials-item .info{
+    display: flex;
+    align-items: center;
+}
+
+.testimonials-item img{
+    max-width: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+.testimonials-item .name{
+    font-size: 24px;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: hsl(0,0%, 0%);
+    line-height: 1.2;
+}
+
+.testimonials-item .job{
+    text-transform: capitalize;
+    color: hsl(0,0%, 40%);
+}
+.testimonials-item p{
+    margin-top: 20px;
+    color:hsl(0,0%,40%)
+}
+
+.testimonials-item .rating{
+    margin-top: 15px;
+    font-size: 14px;
+    color:#f99a00;
+}
+.testimonials .swiper-pagination{
+    position: relative;
+    margin-top: 40px;
+    bottom: auto;
+}
+.testimonials .swiper-pagination-bullet{
+    height: 12px;
+    width: 12px;
+    background-color: hsl(0, 0%, 100%);
+}
